@@ -1,0 +1,151 @@
+
+:root{
+    --h1: #2910a8;
+    --navfoot: #ffffffa0;
+    --calculator: #ffffff;
+    --parg: #000000;
+    --span: #00b6e8;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/bubble-background-png-20.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.263);
+    z-index: -1;
+    pointer-events: none;
+}
+
+nav{
+    background-color: var(--navfoot);
+    height: 80px;
+
+}
+nav h1{
+    text-align: center;
+    padding: 15px;
+    color: var(--h1);
+    font-size: 54px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .left{
+    text-align: center;
+    padding-top: 6rem;
+    color: var(--calculator);
+    padding-left: 2rem;
+}
+
+.container .left h1 span{
+    color: var(--span);
+}
+
+.container .left h1{
+    padding-bottom: 3rem;
+    font-size: 40px;
+}
+
+.container .left p{
+    font-size: 20px;
+    color: var(--calculator);
+    backdrop-filter: blur(25px);
+}
+
+.left, .right {
+    width: 48%;
+    height: 557px;
+}
+
+.right {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.calculator {
+    width: 3500px;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    backdrop-filter: blur(15px);
+}
+
+.display {
+    background: transparent;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 1000;
+    color: var(--calculator);
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.key {
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 1000;
+    color: var(--calculator);
+}
+
+.operator {
+    background: transparent;
+    color: var(--calculator);
+}
+
+.clear {
+    background: transparent;
+
+}
+
+.equal {
+    background: transparent ;
+    color: var(--calculator);
+}
+
+footer{
+    height: 100px;
+    background-color: var(--navfoot);
+}
+footer p{
+    text-align: center;
+    padding-top: 10px;
+    line-height: 1.5;
+    font-size: 18px;
+}

@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header >
+        <div>
+            <nav>
+                <div class="upper">
+                    <h1>Calculator</h1>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="overlay"></div>
+
+        <div class="container">
+            <div class="left">
+                <h1>This Calculator is designed by <span>Mohammad Irfan</span></h1>
+                <p class="justified-centered-text">Welcome to my calculator project, a culmination of my skills as a web designer, developer, and UI/UX enthusiast. 
+                    As a seasoned professional in crafting digital experiences, I've meticulously designed this calculator to seamlessly blend 
+                    functionality with a visually appealing interface. Leveraging my expertise in web development, I've implemented intuitive 
+                    user interactions, ensuring a smooth and responsive user experience. The sleek design and user-centric approach reflect my 
+                    passion for creating designs that not only look stunning but also prioritize user convenience and accessibility. 
+                    Through thoughtful consideration of user flows and interface elements, this calculator stands as a testament to my commitment 
+                    to delivering elegant solutions that bridge design and functionality. Join me on this journey of combining creativity with 
+                    technical prowess,as I continue to push the boundaries of UI/UX excellence in web development. <br class="centered-br"> Feel free to connect and 
+                    discuss about your business  </b></p>
+            </div>
+
+            <div class="right">
+                <div class="right">
+                    <div class="calculator">
+                        <div class="display">0</div>
+                        <div class="keys">
+                                <button class="key" onclick="appendToDisplay('1')">1</button>
+                                <button class="key" onclick="appendToDisplay('2')">2</button>
+                                <button class="key" onclick="appendToDisplay('3')">3</button>
+                                <button class="key operator" onclick="appendToDisplay('+')">+</button>
+
+                                <button class="key" onclick="appendToDisplay('4')">4</button>
+                                <button class="key" onclick="appendToDisplay('5')">5</button>
+                                <button class="key" onclick="appendToDisplay('6')">6</button>
+                                <button class="key operator" onclick="appendToDisplay('-')">-</button>
+
+                                <button class="key" onclick="appendToDisplay('7')">7</button>
+                                <button class="key" onclick="appendToDisplay('8')">8</button>
+                                <button class="key" onclick="appendToDisplay('9')">9</button>
+                                <button class="key operator" onclick="appendToDisplay('/')">/</button>
+
+                                <button class="key" onclick="appendToDisplay('0')">0</button>
+                                <button class="key clear" onclick="clearDisplay()">C</button>
+                                <button class="key equal" onclick="calculate()">=</button>
+                                <button class="key operator" onclick="appendToDisplay('*')">*</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Designed by: Mohammad Irfan <br>Contact: +933030888388<br>copyright @ 2023</p>
+    </footer>
+</body>
+</html>
